@@ -1,0 +1,7 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Default deny; all storage access must be granted explicitly through a server-side signed URL flow.
+    allow read, write: if false;
+  }
+}

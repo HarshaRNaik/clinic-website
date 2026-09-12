@@ -1,0 +1,27 @@
+{
+  "notes": [
+    {
+      "id": "note-001",
+      "rawNote": "38F c/o fever x3d, dry cough, no SOB. Temp 100.4, BP 118/76, PR 92. ?viral URI. T. PCM 650 BD x5d, Levocet OD HS, steam inhalation. RV 5d if no better. Adv: hydration, rest.",
+      "expected": {
+        "demographics": { "age": 38, "sex": "F" },
+        "chiefComplaint": "fever, dry cough",
+        "symptoms": [
+          { "term": "fever", "durationDays": 3 },
+          { "term": "dry cough" }
+        ],
+        "negatives": ["shortness of breath"],
+        "vitals": { "tempF": 100.4, "bp": "118/76", "pulse": 92 },
+        "provisionalDiagnosis": [
+          { "term": "viral upper respiratory infection", "certainty": "suspected" }
+        ],
+        "prescriptions": [
+          { "drug": "Paracetamol", "brandOrAbbrev": "PCM", "dose": "650 mg", "frequency": "BD", "durationDays": 5 },
+          { "drug": "Levocetirizine", "brandOrAbbrev": "Levocet", "dose": null, "frequency": "OD", "timing": "HS", "durationDays": null }
+        ],
+        "advice": ["steam inhalation", "hydration", "rest"],
+        "followUp": { "afterDays": 5, "condition": "if not improving" }
+      }
+    }
+  ]
+}

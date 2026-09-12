@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "dev": "clinic-dev",
+    "staging": "clinic-staging",
+    "prod": "clinic-prod"
+  }
+}

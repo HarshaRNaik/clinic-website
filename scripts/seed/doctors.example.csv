@@ -1,0 +1,6 @@
+fullName,specialisation,qualifications,registrationNumber,consultationFee,slotDurationMinutes,workingDays,startTime,endTime,breakStart,breakEnd,languages,active
+Dr. Arjun Mehta,General Medicine,MBBS|MD,DEMO-GM-001,500,30,Mon|Tue|Wed|Thu|Fri,09:00,17:00,13:00,14:00,English|Hindi,true
+Dr. Meera Nair,Dermatology,MBBS|DVD,DEMO-D-002,700,30,Mon|Wed|Fri|Sat,10:00,18:00,13:30,14:30,English|Hindi|Malayalam,true
+Dr. Rohan Iyer,Gastroenterology,MBBS|DM,DEMO-G-003,900,45,Tue|Thu|Sat,09:00,15:00,12:00,13:00,English|Hindi|Tamil,true
+Dr. Kavya Menon,Pediatrics,MBBS|DCH,DEMO-P-004,600,30,Mon|Tue|Thu|Fri,09:00,16:00,13:00,14:00,English|Hindi|Malayalam,true
+Dr. Sneh Verma,Orthopedics,MBBS|MS,DEMO-O-005,800,30,Wed|Thu|Fri|Sat,11:00,19:00,14:00,15:00,English|Hindi,true
