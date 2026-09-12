@@ -9,3 +9,8 @@ coverage
 firebase-debug.log
 *.log
 .DS_Store
+# Generated test/build output
+test-results/
+playwright-report/
+blob-report/
+*.tsbuildinfo
