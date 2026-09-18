@@ -776,40 +776,42 @@ function SplitLandingPage() {
 
   return (
     <main className="relative min-h-screen w-full max-w-none overflow-hidden p-0">
-      <header className="landing-wordmark pointer-events-auto absolute left-1/2 top-6 z-40 w-full -translate-x-1/2 px-4 text-center text-white md:top-8">
-        {prototypeMode ? (
-          <>
-            <button
-              type="button"
-              disabled={pending}
-              onClick={() => {
-                void enterDemo("patient");
-              }}
-              className="absolute left-4 top-0 min-h-11 rounded-[6px] border border-white/60 px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white transition hover:bg-white hover:text-ink-900 disabled:cursor-not-allowed disabled:opacity-60 md:left-8"
-            >
-              Demo patient
-            </button>
+      <header className="landing-wordmark pointer-events-auto absolute left-1/2 top-4 z-40 w-full -translate-x-1/2 px-3 text-center text-white md:top-8 md:px-4">
+        <div className="flex flex-col items-center">
+          <p className="font-serif text-xl font-semibold md:text-2xl">
+            Arogya Chikitsalaya
+          </p>
 
-            <button
-              type="button"
-              disabled={pending}
-              onClick={() => {
-                void enterDemo("doctor");
-              }}
-              className="absolute right-4 top-0 min-h-11 rounded-[6px] border border-white/60 px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white transition hover:bg-white hover:text-ink-900 disabled:cursor-not-allowed disabled:opacity-60 md:right-8"
-            >
-              Demo doctor
-            </button>
-          </>
-        ) : null}
+          <p className="mt-1 text-xs font-medium uppercase tracking-[0.12em]">
+            Clinic
+          </p>
 
-        <p className="font-serif text-xl font-semibold md:text-2xl">
-          Arogya Chikitsalaya
-        </p>
+          {prototypeMode ? (
+            <div className="mt-4 flex w-full flex-wrap justify-center gap-2 px-1 md:absolute md:left-0 md:top-0 md:mt-0 md:justify-between md:px-8">
+              <button
+                type="button"
+                disabled={pending}
+                onClick={() => {
+                  void enterDemo("patient");
+                }}
+                className="min-h-11 rounded-[6px] border border-white/60 px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white transition hover:bg-white hover:text-ink-900 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                Demo patient
+              </button>
 
-        <p className="mt-1 text-xs font-medium uppercase tracking-[0.12em]">
-          Clinic
-        </p>
+              <button
+                type="button"
+                disabled={pending}
+                onClick={() => {
+                  void enterDemo("doctor");
+                }}
+                className="min-h-11 rounded-[6px] border border-white/60 px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white transition hover:bg-white hover:text-ink-900 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                Demo doctor
+              </button>
+            </div>
+          ) : null}
+        </div>
       </header>
 
       <section
